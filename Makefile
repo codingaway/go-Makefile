@@ -17,4 +17,4 @@ $(GOBIN):
 	mkdir -p $@
 
 build: $(BASE) $(GOBIN)
-	cd $(BASE)/myprog && go build -o $(GOBIN)/$(PROG)
+	cd $(BASE)/cmd && go build -o $(GOBIN)/$(PROG)
